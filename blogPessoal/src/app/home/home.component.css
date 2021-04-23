@@ -1,0 +1,22 @@
+.img
+{
+    width: 500px;
+    height: 500px;
+}
+
+.fs-8
+{
+    font-size: 8pt;
+}
+
+.nav-link
+{
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-tabs :hover
+{
+    color: green;
+}

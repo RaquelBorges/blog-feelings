@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
+        <li class="nave-item">
+          <a routerLink="/home"> <i class="fas fa-home text-white"> </i></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0 d-flex align-items-center">
+        <li>
+          <img src="{{foto}}" alt="img user" class="img-fluid img-circle">
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle fs-14" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Olá! {{nome}}
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+             <ul class="p-0">
+               <li class="dropdown-item" ><a [routerLink]="['/usuario-edit', id]" class="item-menu">Meu dados</a></li>
+              <li class="dropdown-item"><a href=""  class="item-menu" (click)="sair()">Sair</a></li>
+              </ul>
+            </div>
+          </div>
+          </li>
+         
+             
+          
+        
+      </ul>
+    </div>
+  </div>
+</nav>
